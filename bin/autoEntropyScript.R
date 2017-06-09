@@ -1,5 +1,5 @@
-file_name <- "E:\\zon_lab\\FACS\\2015.12.2 Pooled gRNA Zbow\\EXPORTED LIVE CELLS\\WKM_Fish_005_007.livecells.fcs"
 
+file_name <- '/Users/jon/Google Drive/zbow entropy test/EXPORTED LIVE CELLS/WKM_Fish_005_007.livecells.fcs'
 ## use read.flowset to read in a whole directory of fcs files in the future
 ## 
 
