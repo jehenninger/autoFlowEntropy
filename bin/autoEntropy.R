@@ -1,4 +1,4 @@
-autoEntropy <- function(file_name, k, pca_plot = FALSE, entropy_plot = FALSE) {
+autoEntropy <- function(file_name, k = 20, pca_plot = FALSE, entropy_plot = FALSE) {
   
   ## use read.flowset to read in a whole directory of fcs files in the future
   ## 
@@ -37,8 +37,12 @@ autoEntropy <- function(file_name, k, pca_plot = FALSE, entropy_plot = FALSE) {
   
   ## calculate entropy
   
-  flow_entropy <- entropy(flow_data,k = 100, algorithm = c("kd_tree","brute"))
+  flow_entropy <- entropy(flow_data,k = k, algorithm = c("kd_tree","brute"))
+  
+  # sprintf("Sample %s is complete.", basename(file_name))
+  
   
   return(flow_entropy)
   
+
 }
